@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.github.zstorok.android.osgi.demo" android:versionCode="1"
+	android:versionName="1.0">
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<service android:name="EmbeddedOsgiService" android:label="Embedded OSGi Service"
+			android:enabled="true">
+			<intent-filter>
+				<action android:name="com.b2international.demo.osgi.EmbeddedOsgiService"></action>
+			</intent-filter>
+		</service>
+<!--		<receiver android:name="MyStartupIntentReceiver">-->
+<!--			<intent-filter>-->
+<!--				<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+<!--				<category android:name="android.intent.category.HOME" />-->
+<!--			</intent-filter>-->
+<!--		</receiver>-->
+		<activity android:name="MainActivity" android:launchMode="standard">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+								<action android:name="com.b2international.demo.osgi.MainActivity"></action>
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+	</application>
+
+
+</manifest> 

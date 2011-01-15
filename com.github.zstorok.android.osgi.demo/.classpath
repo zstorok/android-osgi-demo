@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="lib" path="lib/felix.jar" sourcepath="/Users/zsolt/Development/android/org.apache.felix.framework-3.0.6-project.zip"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/com.github.zstorok.android.osgi.demo.service"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/com.github.zstorok.android.osgi.demo.service.hu"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
